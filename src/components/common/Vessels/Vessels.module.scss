@@ -17,7 +17,7 @@
     }
     .input {
       height:                46px;
-      max-width:             300px;
+      max-width:             315px;
       width:                 100%;
       background-color:      #565656;
       border:                1px solid #868686;
@@ -26,7 +26,7 @@
       font-size:             18px;
       -webkit-appearance:    none;
       -moz-appearance:       none;
-      background-image:      url('../../img/search.svg');
+      background-image:      url('../../../img/search.svg');
       background-repeat:     no-repeat;
       background-position-x: 3%;
       background-position-y: 50%;
@@ -36,12 +36,14 @@
       margin-bottom:         20px;
     }
     .itemBlocks {
-      display:   flex;
-      flex-wrap: wrap;
+      display:     flex;
+      flex-wrap:   wrap;
+      align-items: center;
     }
     .itemBlock {
       border:           1px solid #fff;
-      margin:           10px 15px 0 0;
+      border-radius:    6px;
+      margin:           0 15px 10px 0;
       display:          flex;
       align-items:      center;
       background-color: #565656;
@@ -66,13 +68,41 @@
         }
       }
     }
+    .verticalLine {
+      display:     none;
+      height:      40px;
+      width:       0;
+      border-left: 1px solid #fff;
+      margin:      0 15px 10px 0;
+      &.active {
+        display: block !important;
+      }
+    }
+    .btnClearFilters {
+      display: none;
+      &.active {
+        display:          block !important;
+        border:           1px solid #fff;
+        border-radius:    6px;
+        padding:          8px;
+        color:            #fff;
+        margin:           0 15px 10px 0;
+        cursor:           pointer;
+        background-color: #404040;
+        transition:       .2s linear;
+        &:hover {
+          background-color: #565656;
+        }
+      }
+    }
     .list1, .list2 {
-      width:            352px;
+      max-width:        315px;
+      width:            100%;
       background-color: #565656;
       padding:          0;
       position:         absolute;
-      top:              36px;
-      left:             40px;
+      top:              46px;
+      left:             0;
       z-index:          10;
       * {
         color: #fff;

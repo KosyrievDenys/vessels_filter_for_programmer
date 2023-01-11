@@ -1,11 +1,11 @@
 import styles from './App.module.scss';
 import '../../index.scss';
-import InputSelected from "../common/InputSelected";
+import Vessels from "../common/Vessels/Vessels";
 
 function App() {
   return (
     <div className={styles.app}>
-      <InputSelected />
+      <Vessels />
     </div>
   );
 }
