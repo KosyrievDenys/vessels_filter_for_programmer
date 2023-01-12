@@ -1,9 +1,7 @@
-.list2 {
+.list1 {
+  display: none;
   li {
-    &:first-of-type {
-      background-color: #747474;
-    }
-    &:not(li:first-of-type, li:nth-of-type(2)) {
+    &:not(li:first-of-type) {
       cursor: pointer;
       &:hover {
         background-color: #747474;
