@@ -1,0 +1,23 @@
+.itemBlocks {
+  display:   flex;
+  flex-wrap: wrap;
+  .verticalLine {
+    height:      40px;
+    width:       0;
+    border-left: 1px solid #fff;
+    margin:      13px 15px 0 0;
+  }
+  .btnClearFilters {
+    border:           1px solid #fff;
+    border-radius:    6px;
+    padding:          8px;
+    color:            #fff;
+    margin:           14px 15px 9px 0;
+    cursor:           pointer;
+    background-color: #404040;
+    transition:       .2s linear;
+    &:hover {
+      background-color: #565656;
+    }
+  }
+}

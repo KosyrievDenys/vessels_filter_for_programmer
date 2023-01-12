@@ -1,6 +1,8 @@
+import React from "react";
+// components
+import { Vessels } from "../common/Vessels/Vessels";
+// assets
 import styles from './App.module.scss';
-import '../../index.scss';
-import Vessels from "../common/Vessels/Vessels";
 
 function App() {
   return (

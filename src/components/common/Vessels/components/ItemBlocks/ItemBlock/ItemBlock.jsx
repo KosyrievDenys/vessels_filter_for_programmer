@@ -1,13 +1,17 @@
 import styles from "./ItemBlock.module.scss";
 import React from "react";
 
-const ItemBlock = ({ arrItemBlocks, finishArr }) => {
+export const ItemBlock = (
+  {
+    arrItemBlocks,
+    finishArr
+  }) => {
   return (
-    arrItemBlocks.map((el, id) => (
+    arrItemBlocks.map((arr, id) => (
         <div className={styles.itemBlock}>
-          <div>
-            <span>{el[0]}</span>
-            <span>{el[1]}</span>
+          <div className={styles.block}>
+            <span>{arr.title}</span>
+            <span>{arr.value}</span>
           </div>
           <span
             className={styles.close}
@@ -19,4 +23,3 @@ const ItemBlock = ({ arrItemBlocks, finishArr }) => {
   )
 }
 
-export default ItemBlock;
